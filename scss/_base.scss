@@ -1,0 +1,59 @@
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-pale-blue: hsl(223, 100%, 88%);
+  --clr-light-red: hsl(354, 100%, 66%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-very-dark-blue: hsl(209, 33%, 12%);
+  --clr-white: hsl(255, 100%, 100%);
+
+  --size: 20px;
+
+  --family-LibreFranklin: "Libre Franklin", sans-serif;
+
+  --fw-light: 300;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: var(--size);
+  font-family: var(--family-LibreFranklin);
+  color: var(--clr-very-dark-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+    width: 16px;
+    height: 16px;
+}

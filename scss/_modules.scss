@@ -1,0 +1,13 @@
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  left: -1000px;
+}

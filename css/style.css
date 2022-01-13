@@ -1,0 +1,221 @@
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-pale-blue: hsl(223, 100%, 88%);
+  --clr-light-red: hsl(354, 100%, 66%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-very-dark-blue: hsl(209, 33%, 12%);
+  --clr-white: hsl(255, 100%, 100%);
+  --size: 20px;
+  --family-LibreFranklin: "Libre Franklin", sans-serif;
+  --fw-light: 300;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: var(--size);
+  font-family: var(--family-LibreFranklin);
+  color: var(--clr-very-dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  left: -1000px;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#main .logo {
+  display: inline-block;
+  margin-bottom: 35px;
+  width: 80px;
+}
+
+#main .logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#main .title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: var(--fw-light);
+  color: var(--clr-gray);
+}
+
+#main .title .bold {
+  font-weight: var(--fw-bolder);
+  color: var(--clr-very-dark-blue);
+}
+
+#main form {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+#main form label {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#main form .entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+#main form .entry input,
+#main form .entry .submit-btn {
+  border-radius: 50px;
+  height: 45px;
+}
+
+#main form .entry input {
+  border: 1px solid var(--clr-pale-blue);
+  padding-left: 16px;
+}
+
+#main form .entry input::-webkit-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+#main form .entry input:-ms-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+#main form .entry input::-ms-input-placeholder {
+  color: var(--clr-pale-blue);
+}
+
+#main form .entry input::placeholder {
+  color: var(--clr-pale-blue);
+}
+
+#main form .entry .submit-btn {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
+#main .illustration {
+  margin-bottom: 80px;
+}
+
+#main .illustration img {
+  width: 100%;
+}
+
+#main .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#main .socials a {
+  border: 1px solid var(--clr-pale-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#main .socials a svg {
+  fill: var(--clr-blue);
+}
+
+#main .copyright {
+  color: var(--clr-gray);
+}
+/*# sourceMappingURL=style.css.map */
