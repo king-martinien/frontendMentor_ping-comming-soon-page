@@ -66,6 +66,18 @@ svg {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 50%;
+  }
+}
+
 .sr-only {
   position: absolute;
   overflow: hidden;
@@ -76,6 +88,7 @@ svg {
 }
 
 #main {
+  padding: 45px 0 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,6 +130,12 @@ svg {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  #main .logo {
+    width: 100px;
+  }
+}
+
 #main .title {
   font-size: 28px;
   margin-bottom: 15px;
@@ -127,6 +146,12 @@ svg {
 #main .title .bold {
   font-weight: var(--fw-bolder);
   color: var(--clr-very-dark-blue);
+}
+
+@media screen and (min-width: 768px) {
+  #main .title {
+    font-size: 42px;
+  }
 }
 
 #main form {
@@ -157,7 +182,7 @@ svg {
 }
 
 #main form .entry input {
-  border: 1px solid var(--clr-pale-blue);
+  border: 2px solid var(--clr-pale-blue);
   padding-left: 16px;
 }
 
@@ -181,6 +206,30 @@ svg {
   background-color: var(--clr-blue);
   color: var(--clr-white);
   font-weight: var(--fw-bold);
+  -webkit-box-shadow: 0 4px 10px var(--clr-pale-blue);
+          box-shadow: 0 4px 10px var(--clr-pale-blue);
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+#main form .entry .submit-btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  #main form .entry {
+    font-size: 42px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #main form .entry input {
+    width: 70%;
+  }
+  #main form .entry .submit-btn {
+    width: 30%;
+  }
 }
 
 #main .illustration {
@@ -209,10 +258,20 @@ svg {
   display: flex;
   padding: 10px;
   border-radius: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #main .socials a svg {
   fill: var(--clr-blue);
+}
+
+#main .socials a:hover {
+  background-color: var(--clr-blue);
+}
+
+#main .socials a:hover svg {
+  fill: var(--clr-white);
 }
 
 #main .copyright {
